@@ -3,16 +3,16 @@
 
 <section class="topic u-container extreme-container u-paddingTop30">
 
-{{#get "tags" limit="all" include="count.posts" order="count.posts desc"}}
+{{#get "authors" limit="all" include="count.posts" order="count.posts desc"}}
 
 <div class="row">
 
-    {{#foreach tags}}
+    {{#foreach authors}}
 
     <div class="col s12 m6 l4 u-marginBottom30">
         <div class="topic-items u-relative u-textColorWhite u-overflowHidden">
-            {{!-- Image - partials/helper/helper-story-image.hbs --}}
-            {{> "helper/helper-story-image"}}
+            {{!-- Image - partials/helper/helper-author-image.hbs --}}
+            {{> "helper/helper-author-image"}}
 
             <div class="topic-gradient u-absolute0"></div>
             <h3 class="u-fontSize20 u-fontWeightMedium u-absolute zindex2 u-textShadow u-textCapitalize" style="bottom:30px;left:20px">

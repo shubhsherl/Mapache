@@ -35,8 +35,10 @@
                 onclick="window.open(this.href, 'share-pinterest', 'width=600,height=480');return false;">
             </a>
         </li>
-        <li>
-            <div class="js-toggle-comments u-pointer button--circle i-chat u-hide post-comments-show" style="margin-top:8px"></div>
-        </li>
+        {{#if discussion_room}}
+            <li>
+                <div class="js-toggle-comments u-pointer button--circle i-chat u-hide post-comments-show" style="margin-top:8px"></div>
+            </li>
+        {{/if}}
     </ul>
 </aside>
